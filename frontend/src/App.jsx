@@ -6,7 +6,7 @@ import {
   ChevronRight, RefreshCw, Trash2, Command, Sparkles
 } from "lucide-react";
 
-const API = "http://127.0.0.1:5000";
+const API = "https://arcticfind-api.onrender.com";
 const LIMIT = 9;
 
 function HighlightText({ text = "", query = "" }) {
@@ -311,9 +311,7 @@ export default function App() {
               {showFavorites ? "Your Favorites" : "Explore Resources"}
             </h3>
             <p className="mt-1 text-sm text-slate-400">
-              {showFavorites
-                ? `${favorites.length} saved resources`
-                : `${total} resources found`}
+              {showFavorites ? `${favorites.length} saved resources` : `${total} resources found`}
             </p>
           </div>
 
